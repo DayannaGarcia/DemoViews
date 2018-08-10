@@ -6,7 +6,9 @@
         <StackLayout>
             <BoxView x:Name="boxcolor"
                      BackgroundColor="Black"
-                     HeightRequest="300"
+                     HeightRequest="100"
+                     WidthRequest="100"
+                     HorizontalOptions="Center"
                      />
             <Label Margin="25,30,0,0"
                    Text="Rojo"/>

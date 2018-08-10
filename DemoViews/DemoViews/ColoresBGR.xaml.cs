@@ -16,5 +16,25 @@ namespace DemoViews
 		{
 			InitializeComponent ();
 		}
-	}
+
+        void CambiarColor(object sender, Xamarin.Forms.ValueChangedEventArgs e)
+        {
+            var red = sldrojo.Value;
+            var blue = sldazul.Value;
+            var green = sldverde.Value;
+
+            Color bgColor = new Color(red, green, blue);
+            boxcolor.BackgroundColor = bgColor;
+            lbDisplay.Text = ColorToHex(bgColor);
+        }
+
+        private string ColorToHex(Color color)
+        {
+            int red = (int)(color.R * 255);
+            int green = (int)(color.G * 255);
+            int blue = (int)(color.B * 255);
+            int alpha = (int)(color.A * 255);
+            return $"#{red:X2}{green:X2}{blue:X2}{alpha:X2}";
+        }
+    }
 }

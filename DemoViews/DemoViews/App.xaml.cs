@@ -11,7 +11,7 @@ namespace DemoViews
 		{
 			InitializeComponent();
 
-			MainPage = new Ejercicio2();
+			MainPage = new ColoresBGR();
 		}
 
 		protected override void OnStart ()
