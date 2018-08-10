@@ -3,45 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DemoViews.Practica">
     <ContentPage.Content>
-      
-            <TableView Intent="Form">
-                <TableView.Root Title="Test">
-                    <TableSection  Title="Primer Seccion">
+
+        <TableView Intent="Form">
+            <TableView.Root Title="Test">
+                <TableSection  Title="Primer Seccion">
                     <TextCell Text="" Detail="Departamento"
                                   />
 
-                        <EntryCell Label="Area"
+                    <EntryCell Label="Area"
                                    Placeholder="Ingrese Area"/>
 
-                        <SwitchCell Text="Provisional"/>
+                    <SwitchCell Text="Provisional"/>
 
-                        <ViewCell>
-                            <ViewCell.View>
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Source="user.png"
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="user.png"
                                        WidthRequest="30"
                                        HeightRequest="30"
                                        />
-                                    <Label Text="Clientes"
+                                <Label Text="Clientes"
                                        VerticalOptions="Center"/>
 
 
-                                </StackLayout>
-
-
-                            </ViewCell.View>
-                        </ViewCell>
-                        
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
                 </TableSection>
-                    
-                    <TableSection  Title="Segunda seccion">
-                        <TextCell Text="" Detail="Profesion"
+
+                <TableSection  Title="Segunda seccion">
+                    <TextCell Text="" Detail="Profesion"
                                   />
 
-                        <EntryCell Label="Especialidad"
+                    <EntryCell Label="Especialidad"
                                    Placeholder="Ingrese Especialidad"/>
 
-                        <SwitchCell Text="Graduado"/>
+                    <SwitchCell Text="Graduado"/>
 
                     <ViewCell>
                         <ViewCell.View>
@@ -55,20 +52,11 @@
 
 
                             </StackLayout>
-
-
                         </ViewCell.View>
                     </ViewCell>
+                </TableSection>
+            </TableView.Root>
+        </TableView>
 
-
-
-                  
-                    </TableSection>
-
-
-
-                </TableView.Root>
-            </TableView>
-     
     </ContentPage.Content>
 </ContentPage>
