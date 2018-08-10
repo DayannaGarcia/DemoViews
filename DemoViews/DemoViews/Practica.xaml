@@ -7,18 +7,33 @@
             <TableView Intent="Form">
                 <TableView.Root Title="Test">
                     <TableSection  Title="Primer Seccion">
-                        <TextCell Text="" Detail="Departamento">
+                    <TextCell Text="" Detail="Departamento"
+                                  />
 
-                        </TextCell>
-                        <TextCell Text="Area">
+                        <EntryCell Label="Area"
+                                   Placeholder="Ingrese Area"/>
 
-                        </TextCell>
-                        <EntryCell Placeholder="Ingrese area"></EntryCell>
-                        <SwitchCell Text="Provicional"></SwitchCell>
-                        <TextCell Text="" Detail="Clientes">
+                        <SwitchCell Text="Provisional"/>
 
-                        </TextCell>
-                    </TableSection>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="user.png"
+                                       WidthRequest="30"
+                                       HeightRequest="30"
+                                       />
+                                    <Label Text="Clientes"
+                                       VerticalOptions="Center"/>
+
+
+                                </StackLayout>
+
+
+                            </ViewCell.View>
+                        </ViewCell>
+                        
+                </TableSection>
+                    
                     <TableSection  Title="Segunda seccion">
                         <TextCell Text="" Detail="Profesion"
                                   />
@@ -28,7 +43,22 @@
 
                         <SwitchCell Text="Graduado"/>
 
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="button.png"
+                                       WidthRequest="30"
+                                       HeightRequest="30"
+                                       />
+                                <Label Text="Logo"
+                                       VerticalOptions="Center"/>
 
+
+                            </StackLayout>
+
+
+                        </ViewCell.View>
+                    </ViewCell>
 
 
 
